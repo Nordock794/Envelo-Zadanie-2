@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENVELO - odbierz przesyłkę</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class="steps">
+            <div class="first-step active-step">
+                <p>1</p>
+                <p>start</p>
+            </div>
+            <span class="vertical-line"></span>
+            <div class="second-step">
+                <p>2</p>
+                <p>odbierz paczkę</p>
+            </div>
+            <span class="vertical-line"></span>
+            <div class="third-step">
+                <p>3</p>
+                <p>paczka odebrana</p>
+            </div>
+        </aside>
+        <main>
+            <div class="start">
+                <img src="img/envelo-logo-2.png" alt="Logo firmy">
+                <section class="content">
+                    <p>Odbierz paczkę szybko i wygodnie w trzech krokach.
+                        Rozpocznij klikając w przycisk.
+                    </p>
+                </section>
+                <button>Odbierz paczkę</button>
+            </div>
+            <div class="validate inactive">
+                <img src="img/envelo-logo-2.png" alt="Logo firmy">
+                <section class="content">
+                    <p>Wprowadź swój numer telefonu oraz kod odbioru aby odebrać paczkę.</p>
+                    <form>
+                        <input type="text" placeholder="Numer telefonu" maxlength="9">
+                        <input type="text" placeholder="Kod odbioru" maxlength="4">
+                        <p></p>
+                    </form>
+                </section>
+                <button>Dalej</button>
+            </div>
+            <div class="finish inactive">
+                <div class="modal">
+                    <section class="content">
+                        <h1>Paczka odebrana!</h1>
+                        <p>Zrobiłeś to w czasie <span></span> sekund. Czy coś możemy dla Ciebie jeszcze zrobić?</p>
+                    </section>
+                    <button>To wszystko na dziś</button>
+                    <button>Odbierz kolejną paczkę</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
